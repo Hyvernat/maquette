@@ -10,9 +10,7 @@
 body {
   min-height: 93vh;
 }
-.h3 {
-  color: #75c435;
-}
+
 .wrapper {
   max-width: 500px;
   margin: 50px auto;
