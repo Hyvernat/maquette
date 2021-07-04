@@ -8,11 +8,11 @@
 }
 
 body {
-  background: linear-gradient(135deg, #75c435, #5cc47b);
-
   min-height: 93vh;
 }
-
+.h3 {
+  color: #75c435;
+}
 .wrapper {
   max-width: 500px;
   margin: 50px auto;
@@ -25,7 +25,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
   backdrop-filter: blur(10px);
-  border: 3px solid rgba(255, 255, 255, 0.5);
+  border: 3px solid #75c435;
   border-radius: 15px;
   cursor: pointer;
   padding: 0.8rem;
@@ -33,17 +33,17 @@ body {
 
 .wrapper .card a {
   text-decoration: none;
-  color: #eee;
+  color: #75c435;
 }
 
 .wrapper .card a:hover {
-  color: #fff;
+  color: #75c435;
 }
 
 .wrapper .card .input-field {
-  border: 1px solid #ddd;
+  border: 1px solid #75c435;
   border-radius: 5px;
-  color: #eee;
+  color: #75c435;
   padding: 0.3rem;
 }
 
@@ -56,17 +56,17 @@ body {
   border: none;
   outline: none;
   box-shadow: none;
-  color: #eee;
+  color: #75c435;
 }
 
 .wrapper .card .input-field button.btn {
-  color: #eee;
+  color: #75c435;
   padding: 0rem;
   padding-right: 0.5rem;
 }
 
 .wrapper .card .input-field button.btn:hover {
-  color: #fff;
+  color: #75c435;
 }
 
 .wrapper .card .input-field button.btn:focus {
@@ -76,7 +76,7 @@ body {
 }
 
 .wrapper .card .input-field input::placeholder {
-  color: #eee;
+  color: #75c435;
 }
 
 .wrapper .card .option {
@@ -88,7 +88,7 @@ body {
 }
 
 .wrapper .card .option span.text-light-white:hover {
-  color: #fff;
+  color: #75c435;
 }
 
 .wrapper .card .option input {
@@ -105,12 +105,12 @@ body {
   left: 0;
   height: 18px;
   width: 18px;
-  background-color: #fff;
+  background-color: #75c435;
   border-radius: 2px;
 }
 
 .wrapper .card .option:hover input ~ .checkmark {
-  background-color: #f1f1f1;
+  background-color: #75c435;
 }
 
 .wrapper .card .option input:checked ~ .checkmark {
@@ -123,7 +123,7 @@ body {
   content: "\2713";
   position: absolute;
   display: none;
-  color: #fff;
+  color: #75c435;
   font-size: 1rem;
 }
 
@@ -141,13 +141,13 @@ body {
 .wrapper .card .btn.btn-primary {
   border-radius: 20px;
   width: 100px;
-  background-color: #fff;
+  background-color: #75c435;
   color: #333;
   border: none;
 }
 
 .wrapper .card .btn.btn-primary:hover {
-  color: #fff;
+  color: #75c435;
   background: #333;
 }
 
@@ -157,18 +157,18 @@ body {
 }
 
 .wrapper .card .text-light-white {
-  color: #ddd;
+  color: #75c435;
 }
 
 .wrapper .card .line span.connect {
   position: absolute;
   top: -12px;
   left: 33%;
-  color: #000;
+  color: rgb(88, 80, 80);
   padding: 0 0.3rem;
   z-index: 100;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: #75c435;
 }
 
 .wrapper .card .connections a img {
