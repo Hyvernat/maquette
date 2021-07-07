@@ -1,177 +1,105 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  min-height: 93vh;
-}
-
-.wrapper {
-  max-width: 500px;
-  margin: 50px auto;
-}
-
-.wrapper .card {
-  max-width: 400px;
-  min-height: 450px;
-  margin: 30px;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-  backdrop-filter: blur(10px);
-  border: 3px solid #75c435;
-  border-radius: 15px;
-  cursor: pointer;
-  padding: 0.8rem;
-}
-
-.wrapper .card a {
-  text-decoration: none;
-  color: #75c435;
-}
-
-.wrapper .card a:hover {
-  color: #75c435;
-}
-
-.wrapper .card .input-field {
-  border: 1px solid #75c435;
-  border-radius: 5px;
-  color: #75c435;
-  padding: 0.3rem;
-}
-
-.wrapper .card .input-field input {
-  background-color: inherit;
-}
-
-.wrapper .card .input-field input.form-control,
-.wrapper .card .input-field input.form-control:focus {
-  border: none;
-  outline: none;
-  box-shadow: none;
-  color: #75c435;
-}
-
-.wrapper .card .input-field button.btn {
-  color: #75c435;
-  padding: 0rem;
-  padding-right: 0.5rem;
-}
-
-.wrapper .card .input-field button.btn:hover {
-  color: #75c435;
-}
-
-.wrapper .card .input-field button.btn:focus {
-  border: none;
-  outline: none;
-  box-shadow: none;
-}
-
-.wrapper .card .input-field input::placeholder {
-  color: #75c435;
-}
-
-.wrapper .card .option {
-  display: block;
+.form {
   position: relative;
-  padding-left: 25px;
-  cursor: pointer;
-  user-select: none;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 300px;
+  margin: 0 auto 100px;
+  padding: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+  box-shadow: 0 8px 12px #3535356b;
 }
-
-.wrapper .card .option span.text-light-white:hover {
-  color: #75c435;
+.form .thumbnail {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  padding: 50px 30px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  box-sizing: border-box;
 }
-
-.wrapper .card .option input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark {
-  position: absolute;
-  top: 3px;
-  left: 0;
-  height: 18px;
-  width: 18px;
-  background-color: #75c435;
-  border-radius: 2px;
-}
-
-.wrapper .card .option:hover input ~ .checkmark {
-  background-color: #75c435;
-}
-
-.wrapper .card .option input:checked ~ .checkmark {
-  border: none;
-  background-color: #333;
-  transition: 300ms ease-in-out all;
-}
-
-.checkmark:after {
-  content: "\2713";
-  position: absolute;
-  display: none;
-  color: #75c435;
-  font-size: 1rem;
-}
-
-.wrapper .card .option input:checked ~ .checkmark:after {
+.form .thumbnail img {
   display: block;
+  width: 100%;
 }
-
-.wrapper .card .option .checkmark:after {
-  left: 3px;
-  top: -3px;
-  width: 5px;
-  height: 10px;
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
-
-.wrapper .card .btn.btn-primary {
-  border-radius: 20px;
-  width: 100px;
-  background-color: #75c435;
-  color: #333;
-  border: none;
+.form button {
+  outline: 0;
+  background: #75c435;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  transition: all 0.3 ease;
+  cursor: pointer;
 }
-
-.wrapper .card .btn.btn-primary:hover {
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
   color: #75c435;
-  background: #333;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
 }
 
-.wrapper .card .btn.btn-primary:focus {
-  border: none;
-  box-shadow: none;
+.Container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
 }
-
-.wrapper .card .text-light-white {
-  color: #75c435;
+.Container:before,
+.Container:after {
+  content: "";
+  display: block;
+  clear: both;
 }
-
-.wrapper .card .line span.connect {
-  position: absolute;
-  top: -12px;
-  left: 33%;
-  color: rgb(88, 80, 80);
-  padding: 0 0.3rem;
-  z-index: 100;
-  border-radius: 2px;
-  background-color: #75c435;
+.Container .info {
+  margin: 50px auto;
+  text-align: center;
 }
-
-.wrapper .card .connections a img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #ef3b3a;
 }
