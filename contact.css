@@ -16,15 +16,6 @@
   box-shadow: 5px 25px 35px #3535356b;
 }
 
-.wrapper .bg-success {
-  height: 100%;
-  width: 40%;
-  padding-top: 40px;
-  padding-left: 50px;
-  padding-right: 20px;
-  color: white;
-}
-
 .wrapper .bg-success .text-white {
   font-size: 3rem;
 }
