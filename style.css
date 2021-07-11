@@ -1,38 +1,73 @@
-.red {
-  height: 600px;
-  background: url(img/cms-img.jpg);
+* {
+  margin: 0;
+  padding: 0;
 }
+
+#showcase {
+  background-image: url(img/cms-img.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0 20px;
+}
+
 body {
-  background-color: #e3f2fd;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  color: black;
+  line-height: 1.6;
 }
 
-.success {
-  font-size: 20px;
-  font-weight: 600;
-  color: #75c435;
-}
-
-.line1 {
-  color: #000;
-  font-size: 12px;
-}
-
-.line2 {
-  color: #000;
-  font-size: 12px;
-}
-
-.line3 {
-  color: #000;
-  font-size: 12px;
-}
-
-.cards {
-  transition: all 0.2s ease;
+.card {
+  border: none;
   cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 0 8px 12px #3535356b;
 }
 
-.cards:hover {
-  box-shadow: 5px 6px 6px 2px #e9ecef;
-  transform: scale(1.1);
+.card:hover {
+  background-color: #75c435;
+  color: #fff;
+}
+
+.card:hover .expert-button {
+  border: 1px solid #75c435;
+  color: #75c435;
+  background-color: #fff;
+}
+
+.card:hover .expert-button:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #75c435;
+}
+
+.expert-button {
+  border-radius: 50px;
+  height: 45px;
+  width: 100%;
+  border: 1px solid #75c435;
+  color: #75c435;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 14px;
+}
+
+.text1 {
+  font-size: 14px;
+}
+div.g-2 {
+  margin: 20px;
+}
+@media (max-width: 640px) {
+  .show {
+    margin: 30px;
+  }
 }
