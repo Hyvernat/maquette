@@ -1,48 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-.container .card {
-  max-width: 300px;
-  height: 215px;
-  margin: 30px 10px;
-  padding: 20px 15px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in-out;
+.red {
+  background-image: url(img/cms-img.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.container .card:hover {
-  height: 500px;
+#showcase {
+  background-image: url(img/cms-img.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 0 20px;
 }
 
-.container .card .imgContainer {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  top: -50px;
-  left: 10px;
-  z-index: 1;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+body {
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  color: black;
+  line-height: 1.6;
 }
 
-.container .card .imgContainer img {
-  max-width: 100%;
-  border-radius: 4px;
+.card {
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 0 8px 12px #3535356b;
 }
 
-.container .card .content {
-  position: relative;
-  margin-top: -140px;
-  padding: 10px 15px;
-  text-align: center;
-  color: #111;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s ease-in-out;
+.card:hover {
+  background-color: #75c435;
+  color: #fff;
 }
 
-.container .card:hover .content {
-  visibility: visible;
-  opacity: 1;
-  margin-top: -40px;
-  transition-delay: 0.3s;
+.card:hover .expert-button {
+  border: 1px solid #75c435;
+  color: #75c435;
+  background-color: #fff;
+}
+
+.card:hover .expert-button:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #75c435;
+}
+
+.expert-button {
+  border-radius: 50px;
+  height: 45px;
+  width: 100%;
+  border: 1px solid #75c435;
+  color: #75c435;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 14px;
+}
+
+.text1 {
+  font-size: 14px;
+}
+div.g-2 {
+  margin: 20px;
+}
+@media (max-width: 640px) {
+  .show {
+    margin: 30px;
+  }
 }
