@@ -22,15 +22,13 @@ body {
 
 .card {
   border: none;
-  cursor: pointer;
-  transition: all 0.5s;
+
   box-shadow: 0 8px 12px #3535356b;
 }
 
 .card:hover .expert-button {
   border: 1px solid #75c435;
-  color: #75c435;
-  background-color: #fff;
+  color: #fff;
 }
 
 .card:hover .expert-button:hover {
@@ -40,21 +38,19 @@ body {
 }
 
 .expert-button {
-  border-radius: 50px;
-  height: 45px;
+  outline: 0;
+  background: #75c435;
   width: 100%;
-  border: 1px solid #75c435;
-  color: #75c435;
-  background-color: #fff;
-  margin-top: 20px;
-  padding: 10px 20px;
+  border: 0;
+  padding: 15px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-  box-sizing: border-box;
-  border: 0;
+  color: #ffffff;
   font-size: 14px;
+  transition: all 0.3 ease;
+  cursor: pointer;
 }
 
 .text1 {
