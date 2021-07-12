@@ -25,11 +25,6 @@ body {
   box-shadow: 0 8px 12px #3535356b;
 }
 
-.card:hover {
-  background-color: #75c435;
-  color: #fff;
-}
-
 .card:hover .expert-button {
   border: 1px solid #75c435;
   color: #75c435;
@@ -69,5 +64,12 @@ div.g-2 {
 @media (max-width: 640px) {
   .show {
     margin: 30px;
+  }
+  #showcase {
+    background-image: url(img/cms-img.jpg);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    padding: 0 20px;
   }
 }
