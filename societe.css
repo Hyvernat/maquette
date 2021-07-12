@@ -1,19 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-.red {
-  background-image: url(img/cms-img.jpg);
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  padding: 0 20px;
-}
 * {
   margin: 0;
   padding: 0;
 }
 
 #showcase {
-  background-image: url(img/cms-img.jpg);
+  background-image: url(img/slider_my_tacos05.png);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -75,7 +68,7 @@ div.g-2 {
     margin: 30px;
   }
   #showcase {
-    background-image: url(img/cms-img.jpg);
+    background-image: url(img/slider_my_tacos05.png);
     height: 50vh;
     background-position: center;
     background-size: cover;
