@@ -1,16 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Kalam&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 .wrapper {
   max-width: 850px;
   margin: 50px auto;
-  height: 600px;
+
   background-color: #fff;
   overflow: hidden;
   box-shadow: 5px 25px 35px #3535356b;
@@ -21,7 +18,6 @@
 }
 
 .wrapper .bg-success .cursive {
-  font-family: "Kalam", cursive;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -31,15 +27,10 @@
   padding: 40px 80px 40px 50px;
 }
 
-.wrapper .contact-form .h3 {
-  padding-top: 15px;
-  font-weight: 700;
-}
-
 .wrapper .contact-form label {
   font-size: 0.9rem;
   color: #555;
-  font-weight: 500;
+
   margin-bottom: 10px;
 }
 
@@ -50,15 +41,9 @@
 .wrapper .contact-form .form-control {
   background-color: #e7e7e7;
   box-shadow: none;
-  font-weight: 600;
-  font-size: 0.95rem;
+
   border: none;
   border-top: 1px solid #bbb;
-}
-
-.wrapper .contact-form .btn {
-  font-size: 1.2rem;
-  font-weight: 700;
 }
 
 .wrapper .contact-form .btn.btn-default {
