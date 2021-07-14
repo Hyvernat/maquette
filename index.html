@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/b1e7d9a3a2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favico"/>
     <link rel="icon" href="img/favicon.png" type="icon">
 </head>
@@ -14,47 +14,81 @@
     <title>H.H</title>
 </head>
 
-<body class="bg-light">
-  <div class="bg-success" >
-    <div class="container">
-      <div class="row">
-        <nav class="col navbar navbar-expand-lg navbar-dark bg-success">
-          <a class="navbar-brand" href="index.html">
-              <img src="img/logo_my_tacos-90x90.png" width="70" height="70" alt="site logo"></a>
-              <h5 class="text-white" style="margin-bottom: 5px;">
-                <a class="nav-link text-light" href="index.html">Mytacos</a>
-              </h5>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-          <div id="navbarContent" class="collapse navbar-collapse"
-             style="justify-content: space-between;">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="plats.html">Plats</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Nous contacter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="societe.html">Notre société</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="tableau.html">Tableau</a>
-              </li>
-            </ul>
-            <a class="btn btn-light" href="login.html" role="button" style >Login</a>
-          </div>
-        </nav>
+<body >
+ 
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo_my_tacos-90x90.png" width="70" height="70" alt="site logo">
+        </a>
+        <h5 class="text-white" style="margin-bottom: 5px;">
+          <a class="nav-link text-light" href="index.html">Mytacos</a>
+          </h5>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse"
+        style="justify-content: space-between;">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="plats.html">Plats</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="contact.html">Nous contacter</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="societe.html">Notre société</a>
+            </li>
+            <li class="nav-item">
+            </li>
+          </ul>
+          <a class="btn btn-light" href="login.html" role="button" style >Login</a>
+        </div>
       </div>
-    </div>
-  </div>
-    <header id="showcase"></header>
-  
-    <div class="container">
+    </nav>
+  </header>
+  <main>
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+             <img src="img/slider_my_tacos05.png" alt="banner" id="banner">
+            <div class="container">
+              <div class="carousel-caption text-start">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            <img src="img/slider_my_tacos03.jpg" alt="banner" id="banner">
+            <div class="container">
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+         
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container" >
+        <h1 class="text-center">Ce qu'on vous propose</h1>
         <div class="row g-2 mt-3">
           <div class="col-md-4">
               <div class="card p-3 py-4">
@@ -84,45 +118,46 @@
                   <div class="mt-5"> <button class="expert-button ">Pour en savoir plus</button> </div>
               </div>
           </div>
-      </div>
-   
-    </div>
-
-  <footer class="bg-success text-white pt-5 pb-4">
-    <div class="conatiner text-center text-md-left">
-      <div class="row text-center text-md-left">
-        <div class="row align-items-center">
           
-          <div class="col-md-5 col-lg-4">
-            <div class="text-center text-md-right">
-               <ul class="list-unstyled list-inline">
-                 <li class="list-inline-item">
-                   <a href="#"class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
-                 </li>
-                 <li class="list-inline-item">
-                  <a href="#"class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fas fa-map-marker-alt"></i></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google"></i></a>
-                </li>
-               </ul>
+      </div>
+      
+    </main>
+    
+    <footer class="bg-success text-white pt-5 pb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="row align-items-center">
+          
+            <div class="col-md-5 col-lg-4">
+              <div class="text-center text-md-right">
+                 <ul class="list-unstyled list-inline">
+                   <li class="list-inline-item">
+                     <a href="#"class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                   </li>
+                   <li class="list-inline-item">
+                    <a href="#"class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fas fa-map-marker-alt"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google"></i></a>
+                  </li>
+                 </ul>
+              </div>
             </div>
-          </div>
-          <div class="col-md-7 col-lg-8">
-            <p>&copy; 2020 Copyright:
-            <a href="#" style="text-decoration: none;">
-            <strong class="text-light">My tacos</strong></a></p>
+            <div class="col-md-7 col-lg-8">
+                <p> &copy; 2020 Copyright:
+                <a href="#" style="text-decoration: none;">
+                <strong class="text-light">My tacos</strong></a></p>
+              </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-</div> 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </footer>
+ 
+
 </body>
+<script src="https://kit.fontawesome.com/b1e7d9a3a2.js" crossorigin="anonymous"></script>
+
 </html>
